@@ -1,7 +1,7 @@
 # custom react app
 
-## project link
-[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+## portfolio link
+[Click here](https://coderafroj.github.io)
 
 # Solution code
 
