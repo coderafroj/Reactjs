@@ -1,3 +1,0 @@
-
-[[index.html]]
-[[customreact.js ]]

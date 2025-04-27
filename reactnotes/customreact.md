@@ -1,3 +1,33 @@
+# custom react app
+
+## project link
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+
+# Solution code
+
+## index.html
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>custom react</title>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+<script src="customreact.js"></script>
+</html>
+
+
+```
+
+## customreact.js
+
+```javascript
   
 function customRender(reactElemen,main){
 //  const domElement=document.createElement//(reactElemen.type)
@@ -22,3 +52,7 @@ const reactElemen={
 }
 const main=document.querySelector("#root")
 customRender(reactElemen,main)
+
+
+
+```
