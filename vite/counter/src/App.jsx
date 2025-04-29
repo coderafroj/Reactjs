@@ -9,16 +9,19 @@ function App() {
   const addValue=()=>{
     
     console.log("hello",counter)
-    setCounter(counter+1)
-    setCounter(counter+1)
-     setCounter(counter+1)
-      setCounter(counter+1)
+  //  setCounter(counter+1)
+   // setCounter(counter+1)
+    // setCounter(counter+1)
+      //setCounter(counter+1)
+      setCounter(prev=>prev+1)
   }
   const removeValue=()=>{
   //  counter=counter-1
    // setCounter(counter-1)
    if(counter>0){
-     setCounter(counter-1)
+     setCounter(prev=>prev-1)//counter ki latest last value leta hai
+      setCounter(prev=>prev-1)
+     
    }
   }
 
