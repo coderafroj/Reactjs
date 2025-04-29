@@ -1,6 +1,7 @@
 #props--reusable component
 ###hamne ek card banaya jismein data likha hai kuch ham cha rahe hai ye ek hi baar banan pade or ham use baar baar use kar ske uski value change karke
 
+
 ##card.jsx
 ```jsx
 import React from "react"
@@ -41,4 +42,13 @@ function App() {
 export default App
 
 ```
+##prev Kahan Se Aaya?
+Ye React Ka Internal System Hai:
+
+Jab bhi tum setCounter(prev => prev + 1) likhte ho
+
+React khud prev ki value provide karta hai
+
+prev = counter ki sabse latest value
+
 
