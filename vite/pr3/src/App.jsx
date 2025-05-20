@@ -10,9 +10,11 @@ function App() {
   return (
     <>
     <h1 class="bg-red-600 p-6 rounded-md border-3 black">coderafroj</h1>
-    <Card username="Afroj" btn="go profile"/>
-    <Card username="arjun" btn="contact"/>
-    <Card/>
+    <Card username="Afroj" btn="go profile" title="web dev" c="bg-blue-400"/>
+    <Card username="arjun" btn="contact" title="bandar" c="bg-red-300"/>
+     <Card c="bg-green-700"/>
+  
+    
     </>
   )
 }
