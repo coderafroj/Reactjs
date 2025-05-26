@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Exchange from "./Exchange"
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
    <h1 className="text-red-400">coderafroj</h1>
+   <Exchange/>
     </>
   )
 }
