@@ -1,4 +1,4 @@
-import { useState } from 'react'
+  import { useEffect, useState } from 'react'
 import './App.css'
 import Input from './components'
 import useCurrecyInfo from './hooks/useCurrencyInfo'
@@ -7,7 +7,7 @@ function App() {
   const [amount,setAmount]=useState(0)
   const [to,setTo]=useState('inr')
   const [from,setFrom]=useState('usd')
-  const [convertedAmount,setConvertedAmount]=useState()
+  const [convertedAmount,setConvertedAmount]=useState(0)
  
   const currencyInfo=useCurrecyInfo(from)
   const options=Object.keys(currencyInfo)
@@ -15,12 +15,16 @@ function App() {
     setFrom(to)
     setTo(from)
 
-    setConvertedAmount(amount)
+    setConvertedAmount(amount || 0)
     setAmount(convertedAmount)
   }
    const convert=()=>{
      setConvertedAmount(amount*currencyInfo[to])
    }
+   //autometic cinvert change change amnountn and caluculte turant
+  //  useEffect(()=>{
+  //   convert()
+  //  },[from,to,amount])
 
 
 
@@ -41,20 +45,20 @@ function App() {
           amount={amount} 
           onAmountChange={(amount)=>setAmount(amount)}
           selectCurrecy={from}
-          onCurrencyChange={(currency)=>setAmount(currency)}
+          onCurrencyChange={(currency)=>setFrom(currency)}
           />
         </div>
         <div className='relative w-full'>
           <button className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-200 rounded-lg px-2 py-0.5' onClick={swap}>swap</button>
         </div>
-        <div className='w-full'>
+        <div className='w-full'>                                                                                                                                                                                                                                                            
           <Input label='to'  
           amount={convertedAmount} 
           currencyOption={options} 
           onCurrencyChange={(currency)=>setTo(currency)} 
           selectCurrecy={to}/>
         </div>
-        <button type="submit" className='bg-blue-600 rounded-lg px-2 py-0.5 mb-3 mt-3 ' onClick={convert}>Convert {from.toUpperCase()}to {to.toLowerCase()}</button>
+        <button type='submit' className='bg-blue-600 rounded-lg px-2 py-0.5 mb-3 mt-3 '>Convert {from.toUpperCase()}to {to.toLowerCase()}</button>
       </form>
     </div>
   </div>
