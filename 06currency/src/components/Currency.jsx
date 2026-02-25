@@ -34,6 +34,7 @@ export default function Currency(){
                     currencyOptions={options}
                     onCurrencyChange={(Currency)=>setFrom(Currency)}
                     onAmountChange={(amount)=>setAmount(amount)}
+                    
                     /></div>
 
                     <div className="text-center"><button onClick={swap}>swap</button></div>
@@ -43,6 +44,9 @@ export default function Currency(){
                     onCurrencyChange={(Currency)=>setTo(Currency)}
                     currencyOptions={options}
                     amount={convertedAmount}
+
+                    amountDisable
+                    
                     
                     /></div>
                     <div className="text-center"><button className="bg-blue-400 px-2 py-1 rounded-lg">convert</button> </div>
