@@ -49,7 +49,7 @@ function App() {
           />
         </div>
         <div className='relative w-full'>
-          <button className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-200 rounded-lg px-2 py-0.5' onClick={swap}>swap</button>
+          <button type="button" className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-200 rounded-lg px-2 py-0.5' onClick={swap}>swap</button>
         </div>
         <div className='w-full'>                                                                                                                                                                                                                                                            
           <Input label='to'  
