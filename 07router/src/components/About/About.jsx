@@ -1,4 +1,4 @@
-import avtar from 'C:/Users/bytecore/Desktop/reactjs/Reactjs/07router/src/assets/avtr.jpg'
+import avtar from '../../assets/avtr.jpg'
 export default function About(){
     return(
         <div className="w-full bg-black h-screen text-white">
