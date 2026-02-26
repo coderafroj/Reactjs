@@ -9,7 +9,7 @@ export default function Header(){
                     <Link><img src={logo} alt="" width={50} /></Link>
                 </div>
                 <div className='hidden md:block '>
-                        <ul className='flex gap-24  '>
+                        <ul className='flex md:gap-24 gap-11  '>
                                     <li><NavLink to="/" className={({isActive})=>(
                                         `font-mono ${isActive ? "text-orange-700":"text-gray-400"}`
                                     )}>Home</NavLink></li>
