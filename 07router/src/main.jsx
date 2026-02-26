@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import Home from './components/Home/Home'
 import About from './components/About/About'
+import Github from './components/Github/Github'
 
 const router=createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router=createBrowserRouter([
       {
         path:"about",
         element:<About/>
+      },
+      {
+        path:'github',
+        element:<Github/>
       }
     ]
   }
