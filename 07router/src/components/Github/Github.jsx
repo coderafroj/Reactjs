@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react"
 import {Link} from 'react-router-dom'
+import {useLoaderData} from "react-router-dom"
 
 export default function Github(){
-    const [data,setData]=useState({})
+const data=useLoaderData()
+{/*    const [data,setData]=useState({})
     useEffect(()=>{
         fetch('https://api.github.com/users/coderafroj').then((res)=>res.json()).then((res)=>setData(res))
     },[])
     console.log(data);
+    */}
     
     return(
         <div className="bg-black w-full h-screen text-white">
@@ -26,4 +29,9 @@ export default function Github(){
             </div>
         </div>
     )
+}
+export const  githubInfo=async ()=>{
+	const res=await fetch("https://api.github.com/users/coderafroj")
+	return res.json()
+	
 }
