@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import Home from './components/Home/Home'
 import About from './components/About/About'
-import Github from './components/Github/Github'
+import Github,{githubInfo} from './components/Github/Github'
 import Params from "./components/Params/Params"
 
 const router=createBrowserRouter([
@@ -23,7 +23,8 @@ const router=createBrowserRouter([
       },
       {
         path:'github',
-        element:<Github/>
+        element:<Github/>,
+        loader:githubInfo
       },
       {
       	path:'Params/:id',
