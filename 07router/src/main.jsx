@@ -7,6 +7,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Github,{githubInfo} from './components/Github/Github'
 import Params from "./components/Params/Params"
+import Currency from './components/Currency'
 
 // const router=createBrowserRouter([
 //   {
@@ -40,6 +41,7 @@ const router=createBrowserRouter(
       <Route path="/about" element={<About/>}/>
       <Route path='/github' element={<Github/>} loader={githubInfo}/>
       <Route path='/params/:id' element={<Params/>}/>
+      <Route path='currency' element={<Currency/>}/>
       
 
 

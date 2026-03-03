@@ -1,4 +1,5 @@
 import avtar from '../../assets/avtr.jpg'
+import { NavLink } from 'react-router-dom'
 export default function About(){
     return(
         <div className="w-full bg-black flex justify-center min-h-screen items-center text-white px-6 gap-12">
@@ -8,6 +9,8 @@ export default function About(){
                         </div>
                         <div className='w-full md:w-1/2 text-center md:text-left'>
                             <h2 className='text-2xl capitalize  '>myself ByteCore </h2>
+                            <h3>my project</h3>
+                            <NavLink to="/currency">currency</NavLink>
                         </div>
                     </div>
                 </div>
