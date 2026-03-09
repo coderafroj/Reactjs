@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 
 import { ThemeProvider } from './contexts/Theme'
 import ThemeBtn from './components/ThemeBtn'
 import Card from './components/Card'
 
 function App() {
-const [themeMode,setThemeMode]=useState("light")
+const [ThemeMode,setThemeMode]=useState("light")
 const lightTheme=()=>{
   setThemeMode('light')
 }
@@ -17,11 +15,11 @@ const darkTheme=()=>{
 }
 useEffect(()=>{
   document.querySelector("html").classList.remove('dark','light')
-document.querySelector('html').classList.add(themeMode)
-},[themeMode])
+document.querySelector('html').classList.add(ThemeMode)
+},[ThemeMode])
 
   return (
-    <ThemeProvider value={{themeMode,lightTheme,darkTheme}}>
+    <ThemeProvider value={{ThemeMode,lightTheme,darkTheme}}>
    
 <div className="flex flex-wrap min-h-screen items-center">
                 <div className="w-full">
