@@ -1,7 +1,8 @@
 import logo from '../assets/r.png'
 export default function Card(){
     return(
-        <div className="grid place-content-center">
+        <div className="grid place-content-center dark:border-2 dark:border-white dark:rounded-xl bg-black/25
+        ">
             <div className='w-full mx-auto bg-green-900 dark:bg-black  px-3 py-4 rounded-lg'>
                 <div className='w-54 h-32 rounded-sm bg-red-200 mb-2'><img className='object-cover w-full h-full rounded-sm' src={logo} alt="" /></div>
                 <div className='w-54'>

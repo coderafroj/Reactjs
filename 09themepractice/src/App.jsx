@@ -4,22 +4,22 @@ import ThemeBtn from './components/ThemBtn'
 import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
-  const [themeMode,setThemeMode]=useState('light')
+  const [theme,setTheme]=useState("dark")
   const darkTheme=()=>{
-    setThemeMode('dark')
-
+    setTheme("dark")
   }
   const lightTheme=()=>{
-    setThemeMode('light')
+    setTheme("light")
   }
   useEffect(()=>{
-    document.querySelector('html').classList.remove('dark','light')
-    document.querySelector('html').classList.add(themeMode)
-  })
+    document.querySelector('html').classList.remove('light','dark')
+    document.querySelector('html').classList.add(theme)
+  },[theme])
+
   return(
     
-  <ThemeProvider value={{darkTheme,lightTheme,themeMode}}>
-    <div className='h-screen p-5 w-full'>
+  <ThemeProvider value={{darkTheme,lightTheme,theme}}>
+    <div className='h-screen p-5 w-full dark:bg-black'>
     <div className='absolute right-[41%] top-5 b-6'><ThemeBtn/></div>
     <div className='mt-8 grid place-content-center'><Card/></div>
   </div>
