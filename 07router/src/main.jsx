@@ -8,6 +8,7 @@ import About from './components/About/About'
 import Github,{githubInfo} from './components/Github/Github'
 import Params from "./components/Params/Params"
 import Currency from './components/Currency'
+import BgChanger from './projects/BgChanger'
 
 // const router=createBrowserRouter([
 //   {
@@ -42,6 +43,7 @@ const router=createBrowserRouter(
       <Route path='/github' element={<Github/>} loader={githubInfo}/>
       <Route path='/params/:id' element={<Params/>}/>
       <Route path='currency' element={<Currency/>}/>
+      <Route path='bgchanger' element={<BgChanger/>}/>
       
 
 

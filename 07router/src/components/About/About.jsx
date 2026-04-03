@@ -7,12 +7,14 @@ export default function About(){
                         <div className='w-full md:w-1/2 flex justify-center '>
             <div className='w-60  '><img className='rounded-2xl mt-0' src={avtar} alt="" /></div>
                         </div>
-                        <div className='w-full md:w-1/2 text-center md:text-left'>
+                        <div className='w-full md:w-1/2 text-center md:text-left p-4'>
                             <h2 className='text-2xl capitalize  '>myself ByteCore </h2>
-                            <h3>my project</h3>
-                            <NavLink to="/currency">currency</NavLink>
+                            <h2 className='text-2xl capitalize'>my projects</h2>
+
+                            <NavLink to="/currency">currency</NavLink><br />
+                            <NavLink to="/bgchanger">bgChanger</NavLink>
                         </div>
                     </div>
-                </div>
+        </div>
     )
 }
