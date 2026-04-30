@@ -10,7 +10,7 @@ export default function Todos() {
             {
                 todos.map((todo) => (
                     <li key={todo.id} className='flex rounded-lg justify-between space-y-3 bg-sky-200 p-2 items-center '>
-                        {todo.text}
+                        {todo.msg}
                         <button className='bg-red-600 shadow-lg rounded-lg px-2 py-1' onClick={() => dispatch(removeTodo(todo.id))}>X</button>
                     </li>
 

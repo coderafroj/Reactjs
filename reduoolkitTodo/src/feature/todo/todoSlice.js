@@ -10,9 +10,12 @@ const todoSlice = createSlice({
         addTodo: (state, action) => {
             const todo = {
                 id: nanoid(),
-                text: action.payload
+                msg: action.payload
             }
             state.todos.push(todo)
+            console.log(state.todos.map(t => t.id));
+            console.log(todo)
+
         },
         removeTodo: (state, action) => {
             state.todos = state.todos.filter((todo) => todo.id !== action.payload)
