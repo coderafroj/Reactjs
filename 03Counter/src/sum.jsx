@@ -17,13 +17,13 @@
                 return;
             }
             setError("")
-            hour=Math.floor(totalSeconds/3600);
+            h=Math.floor(totalSeconds/3600);
             let r=totalSeconds%3600;
-            minute=Math.floor(r/60);
-            second=r%60;
-            setHour(hour)
-            setMinute(minute)
-            setSecond(second)
+            m=Math.floor(r/60);
+            s=r%60;
+            setHour(hour=>h)
+            setMinute(m)
+            setSecond(s)
 
         }
     

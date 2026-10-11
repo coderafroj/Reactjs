@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Coderafroj from './coderafroj'
+import Card from './card'
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <h1>chai with CODERAFROJ</h1>
-    <Coderafroj/>
+    <Card/>
     </>
   )
 }

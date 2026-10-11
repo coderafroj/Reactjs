@@ -6,15 +6,13 @@
 //     c.appendChild(domElement);
 
 // }
- function customeRender(reactElement,c){
-    const dm=document.createElement(reactElement.type);
-    dm.innerHTML=reactElement.children
-    for(let prop in reactElement.props){
-        dm.setAttribute(prop,reactElement.props[prop])
-
+ function customeRender(r,c){
+    let dm=document.createElement(reactElements.type)
+    dm.innerHTML=reactElements.children
+    for(let prop in reactElements.props){
+        dm.setAttribute(prop,reactElements.props[prop])
     }
-    c.appendChild(dm);
-    
+    c.appendChild(dm)
  }
 
 let container=document.getElementById('coder');

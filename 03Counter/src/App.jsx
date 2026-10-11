@@ -1,13 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-import { Counter } from './Counter'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+import {Counter} from './Counter'
+import Sum from './sum'
+function App(){
+  return(
+    <>
     <Counter/>
+    <Sum/>
+    </>
   )
 }
-
 export default App

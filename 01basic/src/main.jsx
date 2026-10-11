@@ -33,6 +33,6 @@ const reactElement=React.createElement(
 
 createRoot(document.getElementById('root')).render(
   // MyApp()
-  // reactElement
-  <App/>
+  reactElement
+  // <App/>
   )

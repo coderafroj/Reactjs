@@ -9,15 +9,15 @@ export const Counter=()=>{
         
         console.log(counter);//update to to console not reflact ui 
         // setCounter(counter+1)
-        //         setCounter(counter+1)
+                // setCounter(counter+1)
 
-        setCounter(counter=>counter+1) //update preve value 
+        // setCounter(counter=>counter+1) //update preve value 
         setCounter(counter=>counter+1)
         
     }
     const remove=()=>{
-        setCounter(counter+1)
-        // setCounter(counter=>counter-1)//update preve value 
+        // setCounter(counter-1)
+        setCounter(counter=>counter-1)//update preve value 
     }
     return(
         <div>
