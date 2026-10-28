@@ -1,11 +1,13 @@
-import {Counter} from './Counter'
-import Sum from './sum'
-function App(){
-  return(
+import Counter from './counter'
+function App() {
+  const name="coderafroj"
+
+  return (
     <>
+    <div>Hey ! my name is {name}</div>
     <Counter/>
-    <Sum/>
     </>
   )
 }
+
 export default App
