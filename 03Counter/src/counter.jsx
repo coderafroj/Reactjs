@@ -3,9 +3,13 @@ import { useState } from "react"
 function Counter(){
     let [Counter,setCounter]=useState(0)
     let add=()=>{
-        setCounter(Counter=Counter+1)
+        // setCounter(Counter=Counter+1)
+        // setCounter(Counter=Counter+1)
+        setCounter(Counter=>Counter+1)
+        setCounter(Counter=>Counter+1)
     }
     let remove=()=>{
+        setCounter(Counter=Counter-1)
         setCounter(Counter=Counter-1)
     }
     return(
