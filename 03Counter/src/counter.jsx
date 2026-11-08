@@ -3,10 +3,12 @@ import { useState } from "react"
 function Counter(){
     let [Counter,setCounter]=useState(0)
     let add=()=>{
-        // setCounter(Counter=Counter+1)
-        // setCounter(Counter=Counter+1)
-        setCounter(Counter=>Counter+1)
-        setCounter(Counter=>Counter+1)
+        //this type of update variable every function update deafult value line 1 counter+2==0 se 2 okay then next line counter+1=1- 0 se 1 third counter+3=0+3=3 then total outp r click is counter 3
+        // setCounter(Counter+2)
+        // setCounter(Counter+1)
+        // setCounter(Counter+3)
+        // setCounter(Counter=>Counter+1)
+        // setCounter(Counter=>Counter+1)
     }
     let remove=()=>{
         setCounter(Counter=Counter-1)
