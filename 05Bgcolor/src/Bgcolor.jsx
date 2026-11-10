@@ -10,7 +10,9 @@ function Bgcolor(){
             </div>
             <div className="w-full flex flex-wrap justify-center  fixed bottom-10 inset-x-0 px-3 py-5 ">
                 <div className="bg-white shadow-2xl flex gap-4 flex-wrap justify-center px-5 rounded-2xl py-2">
-                    <button onClick={()=>setColor('red')} className="text-white shadow-2xl font-bold outline-none  px-2 py-0.6 rounded-lg" style={{backgroundColor:'red'}}>red</button>
+                    <button onClick={(e)=>{
+                        if(e.key.toLowerCase()==='r')setColor('red')
+                    }} className="text-white shadow-2xl font-bold outline-none  px-2 py-0.6 rounded-lg" style={{backgroundColor:'red'}}>red</button>
                     <button onClick={()=>setColor('green')} className="text-white  font-bold outline-none  px-2 py-0.6 rounded-lg" style={{backgroundColor:'green'}}>green</button>
                     <button onClick={()=>setColor('indigo')} className="text-white  font-bold outline-none  px-2 py-0.6 rounded-lg" style={{backgroundColor:'indigo'}}>indigo</button>
                     <button onClick={()=>setColor('pink')} className="text-white  font-bold outline-none  px-2 py-0.6 rounded-lg" style={{backgroundColor:'pink'}}>pink</button>
