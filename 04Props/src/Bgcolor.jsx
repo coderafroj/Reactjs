@@ -4,7 +4,7 @@ function Bgcolor(){
     const [color,setColor]=useState("red")
     return(
         <div className="w-full h-screen  " style={{backgroundColor:color}}>
-            hey m sel coderafjor 
+            hey m sel coderafjor w
 
         </div>
     )
