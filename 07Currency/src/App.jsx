@@ -1,10 +1,10 @@
-
+import Currency from './components/Currency'
 import Input from './components/Input'
 function App() {
   
 
   return (
-    <Input/>
+    <Currency/>
   )
 }
 
